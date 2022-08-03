@@ -1,0 +1,290 @@
+body{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+
+/*utility*/
+.lh-1{
+    line-height: 30px;
+}
+.lh-2{
+    line-height: 35px;
+}
+
+/* end of utility*/
+ /*header*/
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0,.2),rgba(0,0,0,.4)) ,url(pexels-cottonbro-4325436.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+
+}
+   
+/*banner*/
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+}
+ .banner-heading{
+    animation:anim ;
+    animation-duration: 3s;
+ }
+ .banner-pr{
+    animation: anim;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+ }
+
+ @keyframes anim{
+    0%{
+       opacity: 0;
+       transform: translateX(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(opx);
+
+    }
+ }
+
+/* end of banner*/
+/*navbar*/
+.nav-menu{
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)) ;
+    padding: 20px;
+    
+
+
+}
+.menu-item{
+    font-size: 17px;
+    color:beige ;
+    transition:color .5s;
+
+}
+.menu-item:hover{
+    color: rgb(248, 12, 12);
+    
+}
+
+.line1 , .line2 , .line3{
+    width: 15px;
+    height: 3px;
+    margin: 4px;
+    transition: all .4s;
+}
+
+.change .line1{
+    transform: rotate(-45deg) translate(-5px , 6px);
+}
+.change .line2{
+    opacity: 0;
+}
+.change .line3{
+    transform: rotate(45deg) translate(-5px , -6px);
+}
+.custom-navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,-6),rgba(0,0,0,.7));
+}
+
+
+
+/* end of navbar*/
+
+ /*end of header*/
+
+ /*awards*/
+ .awards{
+    background-color: #000000;
+    ;
+ }
+
+ .fromeleft{
+    animation-name: fromeLeft;
+    animation-duration: 5s;
+
+
+ }
+ .fromeright{
+    animation-name: fromeRight;
+    animation-duration: 5s;
+
+
+ }
+
+
+
+
+
+ @keyframes fromeLeft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+     
+    }
+    100%{
+
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+ }
+ 
+ @keyframes fromeRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+     
+    }
+    100%{
+
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+ }
+ 
+ /*end of awards*/
+ .underline{
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+ }
+
+ .underline-dark{
+    border: 3px solid #888;
+ }
+
+ /*services*/
+ .card-shadow{
+    box-shadow: 5px 8px 20px rgb(245, 118, 118);
+
+ }
+ .heading{
+    position: absolute;
+    bottom: 50px;
+    font-size: 25px;
+    left: 0px;
+    background-color: #f73831;
+    width: 110px;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .7s;
+
+ }
+ .heading:hover{
+    opacity: 1;
+ }
+ /*gallery*/
+ .gallery-list-item{
+    color: #333f3f;
+    cursor: pointer;
+    user-select : none;
+
+  }
+
+ .active-item{
+    color: #906967;
+
+
+ }
+ .card-1 , .card-2 , .card-3{
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.5)), url(./pexels-cottonbro-4325439.jpg);
+    background-size: cover;
+    box-shadow: 8px 10px 11px #555;
+    max-width: 370px;
+
+}
+.card-list-item{
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto;
+}
+.membership-card-button{
+    background-color: rgb(120, 54, 54);
+    width: 130px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 18px #000;
+    transition: all .4s;
+}
+.membership-card-button:hover{
+    background-color: rgb(214, 85, 85);
+    transform: translateY(-2px);
+}
+@keyframes movefromeleft{
+    0%{
+
+    transform : translateX(-100px);
+    opacity: 0;
+    }
+    100%{
+        transform : translateX(0px );
+    opacity: 1;
+
+    }
+}
+@keyframes movefromeright{
+    0%{
+
+    transform : translateX(100px );
+    opacity: 0;
+    }
+    100%{
+        transform : translateX(0px );
+    opacity: 1;
+
+    }
+}
+@keyframes movefromebuttom{
+    0%{
+
+    transform : translateY(100px );
+    opacity: 0;
+    }
+    100%{
+        transform : translateY(0px );
+    opacity: 1;
+
+    }
+
+}
+.movefromeleft{
+    animation-name: movefromeleft;
+    animation-duration: 2s;
+
+
+}
+.movefromeright{
+    animation-duration: 2s;
+    animation-name: movefromeright;
+
+
+}
+.movefromebuttom{
+    animation-name: movefromebuttom;
+    animation-duration: 2s;
+
+
+}
+.contact-all{
+    background: linear-gradient(105deg,rgba(96, 96, 113, 0.8)0% , rgba(35, 28, 28, 0.9)50%,transparent 50%),  url(./pexels-cottonbro-4325442\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    
+
+
+ /*end of gallery*/
+
+
+
+ /*end of services*/
